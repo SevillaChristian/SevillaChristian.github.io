@@ -50,7 +50,8 @@ button:hover {
 }
 h1 {
     font-size: 40px;
-    color: #8a0000;
+    color: #000000;
+;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
