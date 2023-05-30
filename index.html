@@ -1,27 +1,36 @@
+
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
-   
-    <title>Ejamplo JS</title>
+    <title>Bloquera  Placito</title>
 </head>
 <body>
-    
-    <main class="cuadricula">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="contacto.html">Contacto de programadores</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <div class="cuadricula_capa">
-            <h1 class="titulo">Contador</h1>
-            <p id="demo" class="parrafo">0</p>
-            <div class="botones_capa">
-                <button id="bt-1" class="btn">DISMINUIR</button>
-                <button id="bt-2" class="btn">REINICIAR</button>
-                <button id="bt-3" class="btn">AUMENTAR</button>
-            </div>
-        </div>
-    </main>
-<script src="script.js"></script>
+    <h1>Bloquera  Placito</h1>
+
+    <div class="button-container">
+        <button onclick="descargar()">Descargar</button>
+    </div>
+
+    <script>
+        function descargar() {
+            var link = "https://drive.google.com/file/d/1aZ8eCKbpKx7ntCiUjwXjp-3No1Lcmfeg/view?usp=sharing";
+            var a = document.createElement("a");
+            a.href = link;
+            a.download = "ArchivoDescargado"; // Nombre del archivo descargado (opcional)
+            a.click();
+        }
+    </script>
 </body>
 </html>
